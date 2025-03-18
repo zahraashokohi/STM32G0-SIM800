@@ -1,0 +1,109 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: z z, z, LIC=PE7DL-095XF-565Q2-90LVH-41UV1-3HPPT
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DARMCM1.DLL V1.19.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.29.0
+Dialog DLL:      TARMCM1.DLL V1.14.0.0
+ 
+<h2>Project:</h2>
+E:\sim800_G0\sim800_G0\sim800G0\MDK-ARM\sim800G0.uvprojx
+Project File Date:  08/01/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'sim800G0'
+compiling gpio.c...
+compiling main.c...
+../Core/Src/main.c(119): warning:  #177-D: variable "index"  was declared but never referenced
+  	uint8_t index;
+../Core/Src/main.c(62): warning:  #177-D: variable "CRLF"  was declared but never referenced
+  static const char CRLF[2] = "\r\n";
+../Core/Src/main.c: 2 warnings, 0 errors
+compiling dma.c...
+compiling tim.c...
+compiling stm32g0xx_hal_msp.c...
+compiling usart.c...
+compiling stm32g0xx_it.c...
+compiling Sim800Handler.c...
+..\Lib\sim800\Sim800Handler.c(29): warning:  #223-D: function "strtok" declared implicitly
+  		  start= strtok(BUF.RxData,",");
+..\Lib\sim800\Sim800Handler.c(29): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "char *"
+  		  start= strtok(BUF.RxData,",");
+..\Lib\sim800\Sim800Handler.c(31): warning:  #223-D: function "strchr" declared implicitly
+  		  end = strchr(start,'"');
+..\Lib\sim800\Sim800Handler.c(31): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "char *"
+  		  end = strchr(start,'"');
+..\Lib\sim800\Sim800Handler.c(40): warning:  #223-D: function "strncmp" declared implicitly
+  	if(strncmp("RING", BUF.RxData,4) ==  0)
+..\Lib\sim800\Sim800Handler.c(46): warning:  #223-D: function "strncmp" declared implicitly
+  	if(strncmp("+CLIP:", BUF.RxData, 6) == 0)
+..\Lib\sim800\Sim800Handler.c(52): warning:  #223-D: function "strncmp" declared implicitly
+  	if(strncmp("+DTMF:", BUF.RxData, 6) == 0)
+..\Lib\sim800\Sim800Handler.c(57): warning:  #223-D: function "strncmp" declared implicitly
+  	if(strncmp("NO CARRIER", BUF.RxData, 7) == 0)
+..\Lib\sim800\Sim800Handler.c(61): warning:  #223-D: function "strncmp" declared implicitly
+  	if(strncmp("+CLCC:", BUF.RxData, 6) == 0)
+..\Lib\sim800\Sim800Handler.c(66): warning:  #223-D: function "strncmp" declared implicitly
+      if(strncmp("OK", BUF.RxData, 2) == 0)
+..\Lib\sim800\Sim800Handler.c(71): warning:  #223-D: function "strncmp" declared implicitly
+      if(strncmp("ERROR", BUF.RxData, 4) == 0)
+..\Lib\sim800\Sim800Handler.c(75): warning:  #223-D: function "strncmp" declared implicitly
+  	if(strncmp("+CMGS:", BUF.RxData, 6) == 0)
+..\Lib\sim800\Sim800Handler.c(79): warning:  #223-D: function "strncmp" declared implicitly
+      if(strncmp(">", BUF.RxData, 1) == 0)
+..\Lib\sim800\Sim800Handler.c(83): warning:  #223-D: function "strncmp" declared implicitly
+  	if(strncmp("+CMTI:", BUF.RxData, 6) == 0)
+..\Lib\sim800\Sim800Handler.c(88): warning:  #223-D: function "strncmp" declared implicitly
+  	if(strncmp("+CMT:", BUF.RxData, 5) == 0)
+..\Lib\sim800\Sim800Handler.c(93): warning:  #223-D: function "strncmp" declared implicitly
+  	if(strncmp("+CMGR:", BUF.RxData, 6) == 0)
+..\Lib\sim800\Sim800Handler.c(339): warning:  #68-D: integer conversion resulted in a change of sign
+     		state_set = -1;
+..\Lib\sim800\Sim800Handler.c(344): warning:  #68-D: integer conversion resulted in a change of sign
+    return -1;
+..\Lib\sim800\Sim800Handler.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=15632 RO-data=404 RW-data=44 ZI-data=3796  
+FromELF: creating hex file...
+"sim800G0\sim800G0.axf" - 0 Error(s), 20 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G0xx_DFP.1.4.0.pack
+                Keil.STM32G0xx_DFP.1.4.0
+                STMicroelectronics STM32G0 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_sim800G0
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32G0xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

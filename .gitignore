@@ -1,0 +1,9 @@
+MDK-ARM/*/
+MDK-ARM/*.ini
+MDK-ARM/*.txt
+MDK-ARM/*.uvguix*
+MDK-ARM/*.scvd
+
+*.o
+*.obj
+*.map
